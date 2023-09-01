@@ -1,0 +1,32 @@
+name: custom_gallery_picker
+description: Assets picker which is inspired by messenger camera and gallery. 
+version: 2.0.0-dev-1
+
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+
+dependencies:
+  camera: ^0.9.8+1
+  collection: ^1.16.0
+  flutter:
+    sdk: flutter
+  meta: ^1.7.0
+  path: ^1.8.1
+  photo_manager: ^2.1.4
+  uuid: ^3.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/camera.png
+
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: lib/assets/fonts/CustomIcons.ttf

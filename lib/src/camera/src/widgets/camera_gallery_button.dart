@@ -54,7 +54,7 @@ class _GalleyView extends StatefulWidget {
 }
 
 class _GalleyViewState extends State<_GalleyView> {
-  late final Future<List<DrishyaEntity>> _recent;
+  late final Future<List<PickerEntity>> _recent;
 
   @override
   void initState() {
@@ -75,7 +75,7 @@ class _GalleyViewState extends State<_GalleyView> {
         ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: FutureBuilder<List<DrishyaEntity>>(
+          child: FutureBuilder<List<PickerEntity>>(
             future: _recent,
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done &&

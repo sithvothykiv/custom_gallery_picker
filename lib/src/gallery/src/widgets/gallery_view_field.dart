@@ -27,11 +27,11 @@ class GalleryViewField extends StatelessWidget {
   ///
   /// While picking drishya using gallery removed will be true if,
   /// previously selected drishya is unselected otherwise false.
-  final void Function(DrishyaEntity entity, bool removed)? onChanged;
+  final void Function(PickerEntity entity, bool removed)? onChanged;
 
   ///
   /// Triggered when picker complet its task.
-  final ValueSetter<List<DrishyaEntity>>? onSubmitted;
+  final ValueSetter<List<PickerEntity>>? onSubmitted;
 
   ///
   /// If used [GalleryViewField] with [SlidableGallery]

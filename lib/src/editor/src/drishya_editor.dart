@@ -27,13 +27,13 @@ class DrishyaEditor extends StatefulWidget {
   final bool hideOverlay;
 
   /// Open drishya editor
-  static Future<DrishyaEntity?> open(
+  static Future<PickerEntity?> open(
     BuildContext context, {
     DrishyaEditingController? controller,
     EditorSetting? setting,
     bool hideOverlay = false,
   }) async {
-    return Navigator.of(context).push<DrishyaEntity>(
+    return Navigator.of(context).push<PickerEntity>(
       SlideTransitionPageRoute(
         builder: DrishyaEditor(
           controller: controller,

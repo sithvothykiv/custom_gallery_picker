@@ -106,7 +106,7 @@ class Albums extends ValueNotifier<AlbumsValue> {
   // }
 
   /// Fetch recent entities
-  Future<List<DrishyaEntity>> recentEntities({
+  Future<List<PickerEntity>> recentEntities({
     RequestType? type,
     int count = 20,
     ValueSetter<Exception>? onException,

@@ -34,9 +34,8 @@ class GalleryView extends StatefulWidget {
 
   ///
   /// Pick media
-  static Future<List<DrishyaEntity>?> pick(
+  static Future<List<PickerEntity>?> pick(
     BuildContext context, {
-
     /// Gallery controller
     GalleryController? controller,
 
@@ -46,7 +45,7 @@ class GalleryView extends StatefulWidget {
     /// Route setting
     CustomRouteSetting? routeSetting,
   }) {
-    return Navigator.of(context).push<List<DrishyaEntity>>(
+    return Navigator.of(context).push<List<PickerEntity>>(
       SlideTransitionPageRoute(
         builder: GalleryView(controller: controller, setting: setting),
         setting: routeSetting ??

@@ -11,7 +11,7 @@
 
 ---
 
-<p align="center">A flutter package which is clone of facebook messenger gallery picker and camera, combined as single component. Gallery view and Camera view can also be use as Flutter widget. Under the hood custom gallery picker used <a href="https://pub.dev/packages/photo_manager">Photo Manager</a> and <a href="https://pub.dev/packages/camera">Camera</a>.</p>
+<p align="center">A flutter package which is clone of facebook messenger or instagram gallery picker like facebook story able to add emoji stickers text etc... and camera editor, combined as single component. Gallery view and Camera view can also be use as Flutter widget. Under the hood custom gallery picker used <a href="https://pub.dev/packages/photo_manager">Photo Manager</a> and <a href="https://pub.dev/packages/camera">Camera</a>.</p>
 
 ---
 
@@ -130,13 +130,13 @@ Add following content to `info.plist`.
     <table>
         <tr>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/gallery.gif" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/gallery.gif" width="200"/>
             </td>            
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/1.jpg" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/1.jpg" width="200"/>
             </td>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/7.jpg" width="200" />
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/7.jpg" width="200" />
             </td>
         </tr> 
     </table>
@@ -145,13 +145,13 @@ Add following content to `info.plist`.
     <table>
         <tr>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/photo_editor.gif" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/photo_editor.gif" width="200"/>
             </td>            
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/5.jpg" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/5.jpg" width="200"/>
             </td>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/6.jpg" width="200" />
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/6.jpg" width="200" />
             </td>
         </tr> 
     </table>
@@ -252,13 +252,13 @@ GalleryViewField(
     <table>
         <tr>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/camera.gif" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/camera.gif" width="200"/>
             </td>            
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/8.jpg" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/8.jpg" width="200"/>
             </td>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/12.jpg" width="200" />
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/12.jpg" width="200" />
             </td>
         </tr> 
     </table>
@@ -267,13 +267,13 @@ GalleryViewField(
     <table>
         <tr>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/playground.gif" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/playground.gif" width="200"/>
             </td>            
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/photo_editor.gif" width="200"/>
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/photo_editor.gif" width="200"/>
             </td>
             <td style="text-align: center">
-                <img src="https://raw.githubusercontent.com/koiralapankaj7/drishya_picker/dev/assets/10.jpg" width="200" />
+                <img src="https://raw.githubusercontent.com/sithvothykiv/custom_gallery_picker/master/assets/10.jpg" width="200" />
             </td>
         </tr> 
     </table>

@@ -136,7 +136,7 @@ class Data {
   });
 
   ///
-  final List<DrishyaEntity> entities;
+  final List<PickerEntity> entities;
 
   ///
   final int maxLimit;
@@ -146,7 +146,7 @@ class Data {
 
   ///
   Data copyWith({
-    List<DrishyaEntity>? entities,
+    List<PickerEntity>? entities,
     int? maxLimit,
     RequestType? requestType,
   }) {

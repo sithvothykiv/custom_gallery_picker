@@ -43,9 +43,8 @@ class CameraView extends StatefulWidget {
   static const String name = 'CameraView';
 
   /// Open camera view for picking.
-  static Future<List<DrishyaEntity>?> pick(
+  static Future<List<PickerEntity>?> pick(
     BuildContext context, {
-
     /// Camera controller
     CamController? controller,
 
@@ -64,7 +63,7 @@ class CameraView extends StatefulWidget {
     /// Route setting
     CustomRouteSetting? routeSetting,
   }) async {
-    return Navigator.of(context).push<List<DrishyaEntity>>(
+    return Navigator.of(context).push<List<PickerEntity>>(
       SlideTransitionPageRoute(
         builder: CameraView(
           controller: controller,

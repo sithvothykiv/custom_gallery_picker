@@ -4,9 +4,9 @@ import 'dart:typed_data';
 import 'package:custom_gallery_picker/custom_gallery_picker.dart';
 
 ///
-class DrishyaEntity extends AssetEntity {
+class PickerEntity extends AssetEntity {
   ///
-  const DrishyaEntity({
+  const PickerEntity({
     required String id,
     required int height,
     required int width,
@@ -51,7 +51,7 @@ class DrishyaEntity extends AssetEntity {
 
   ///
   @override
-  DrishyaEntity copyWith({
+  PickerEntity copyWith({
     Uint8List? pickedThumbData,
     File? pickedFile,
     String? id,
@@ -70,7 +70,7 @@ class DrishyaEntity extends AssetEntity {
     String? mimeType,
     int? subtype,
   }) =>
-      DrishyaEntity(
+      PickerEntity(
         pickedThumbData: pickedThumbData ?? this.pickedThumbData,
         pickedFile: pickedFile ?? this.pickedFile,
         id: id ?? this.id,
@@ -93,8 +93,8 @@ class DrishyaEntity extends AssetEntity {
 
 /// AssetEntity extension
 extension AssetEntityX on AssetEntity {
-  /// Convert [AssetEntity] to [DrishyaEntity]
-  DrishyaEntity get toDrishya => DrishyaEntity(
+  /// Convert [AssetEntity] to [PickerEntity]
+  PickerEntity get toDrishya => PickerEntity(
         id: id,
         width: width,
         height: height,

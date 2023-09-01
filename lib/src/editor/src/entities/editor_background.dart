@@ -28,14 +28,14 @@ class DrishyaBackground implements EditorBackground {
   });
 
   /// Drishya entity
-  final DrishyaEntity entity;
+  final PickerEntity entity;
 
   @override
   Widget build(BuildContext context) => _EntityBGView(entity: entity);
 
   ///
   DrishyaBackground copyWith({
-    DrishyaEntity? entity,
+    PickerEntity? entity,
   }) {
     return DrishyaBackground(
       entity: entity ?? this.entity,
@@ -171,7 +171,7 @@ class GradientBackground implements EditorBackground {
 class _EntityBGView extends StatefulWidget {
   const _EntityBGView({Key? key, required this.entity}) : super(key: key);
 
-  final DrishyaEntity entity;
+  final PickerEntity entity;
 
   @override
   _EntityBGViewState createState() => _EntityBGViewState();

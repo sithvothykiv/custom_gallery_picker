@@ -5,7 +5,7 @@ import 'package:custom_gallery_picker/custom_gallery_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-/// Widget to display [DrishyaEntity] thumbnail
+/// Widget to display [PickerEntity] thumbnail
 class EntityThumbnail extends StatelessWidget {
   ///
   const EntityThumbnail({
@@ -15,7 +15,7 @@ class EntityThumbnail extends StatelessWidget {
   }) : super(key: key);
 
   ///
-  final DrishyaEntity entity;
+  final PickerEntity entity;
 
   /// Callback function triggered when image bytes is generated
   final ValueSetter<Uint8List?>? onBytesGenerated;
@@ -76,7 +76,7 @@ class _MediaThumbnailProvider extends ImageProvider<_MediaThumbnailProvider> {
   const _MediaThumbnailProvider({required this.entity, this.onBytesLoaded});
 
   ///
-  final DrishyaEntity entity;
+  final PickerEntity entity;
   final ValueSetter<Uint8List?>? onBytesLoaded;
 
   @override

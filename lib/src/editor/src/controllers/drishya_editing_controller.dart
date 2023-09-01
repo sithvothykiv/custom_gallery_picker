@@ -159,7 +159,7 @@ class DrishyaEditingController extends ValueNotifier<EditorValue> {
 
   ///
   /// Complete editing and generate image
-  Future<DrishyaEntity?> completeEditing({
+  Future<PickerEntity?> completeEditing({
     ValueSetter<Exception>? onException,
   }) async {
     try {

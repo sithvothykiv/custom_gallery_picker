@@ -46,7 +46,7 @@ class CameraViewField extends StatelessWidget {
 
   ///
   /// Triggered when picker capture media
-  final void Function(List<DrishyaEntity> entities)? onCapture;
+  final void Function(List<PickerEntity> entities)? onCapture;
 
   @override
   Widget build(BuildContext context) {

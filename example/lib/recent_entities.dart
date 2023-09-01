@@ -22,7 +22,7 @@ class RecentEntities extends StatefulWidget {
 }
 
 class _RecentEntitiesState extends State<RecentEntities> {
-  late final Future<List<DrishyaEntity?>> _future;
+  late final Future<List<PickerEntity?>> _future;
 
   @override
   void initState() {
@@ -45,7 +45,7 @@ class _RecentEntitiesState extends State<RecentEntities> {
         SizedBox(
           height: 100.0,
           width: MediaQuery.of(context).size.width,
-          child: FutureBuilder<List<DrishyaEntity?>>(
+          child: FutureBuilder<List<PickerEntity?>>(
             future: _future,
             builder: (context, snapshot) {
               if (snapshot.connectionState != ConnectionState.done ||
@@ -69,7 +69,7 @@ class _RecentEntitiesState extends State<RecentEntities> {
                         child: InkWell(
                           onTap: () {
                             final entities =
-                                List<DrishyaEntity>.from(data.entities);
+                                List<PickerEntity>.from(data.entities);
                             if (selected) {
                               entities.remove(entity);
                             } else {

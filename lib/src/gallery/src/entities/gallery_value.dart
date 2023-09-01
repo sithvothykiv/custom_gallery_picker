@@ -7,13 +7,13 @@ import 'package:flutter/material.dart';
 class GalleryValue {
   ///
   const GalleryValue({
-    this.selectedEntities = const <DrishyaEntity>[],
+    this.selectedEntities = const <PickerEntity>[],
     this.isAlbumVisible = false,
     this.enableMultiSelection = false,
   });
 
   ///
-  final List<DrishyaEntity> selectedEntities;
+  final List<PickerEntity> selectedEntities;
 
   ///
   final bool isAlbumVisible;
@@ -23,7 +23,7 @@ class GalleryValue {
 
   ///
   GalleryValue copyWith({
-    List<DrishyaEntity>? selectedEntities,
+    List<PickerEntity>? selectedEntities,
     bool? isAlbumVisible,
     bool? enableMultiSelection,
   }) {

@@ -18,7 +18,7 @@ class EditorShutterButton extends StatelessWidget {
   final DrishyaEditingController controller;
 
   ///
-  final ValueSetter<DrishyaEntity>? onSuccess;
+  final ValueSetter<PickerEntity>? onSuccess;
 
   @override
   Widget build(BuildContext context) {

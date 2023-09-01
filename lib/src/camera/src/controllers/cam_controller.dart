@@ -225,7 +225,7 @@ class CamController extends ValueNotifier<CamValue> {
 
   ///
   /// Take picture
-  Future<DrishyaEntity?> takePicture(BuildContext context) async {
+  Future<PickerEntity?> takePicture(BuildContext context) async {
     if (!_hasCamera()) return null;
 
     if (value.isTakingPicture) return null;
@@ -246,7 +246,7 @@ class CamController extends ValueNotifier<CamValue> {
 
       if (_setting.editAfterCapture) {
         await controller.pausePreview();
-        final route = SlideTransitionPageRoute<DrishyaEntity?>(
+        final route = SlideTransitionPageRoute<PickerEntity?>(
           builder: DrishyaEditor(
             setting: _photoEditorSetting.copyWith(
               backgrounds: [MemoryAssetBackground(bytes: bytes)],
@@ -373,7 +373,7 @@ class CamController extends ValueNotifier<CamValue> {
 
   ///
   /// Stop/Complete video recording
-  Future<DrishyaEntity?> stopVideoRecording(
+  Future<PickerEntity?> stopVideoRecording(
     BuildContext context, {
     bool createEntity = true,
   }) async {

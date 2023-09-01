@@ -37,7 +37,7 @@ class GallerySetting {
 
   ///
   /// Previously selected entities
-  final List<DrishyaEntity> selectedEntities;
+  final List<PickerEntity> selectedEntities;
 
   ///
   /// Type of media e.g, image, video, audio, other
@@ -91,7 +91,7 @@ class GallerySetting {
   ///
   /// Helper function to copy its properties
   GallerySetting copyWith({
-    List<DrishyaEntity>? selectedEntities,
+    List<PickerEntity>? selectedEntities,
     RequestType? requestType,
     int? maximumCount,
     SelectionMode? selectionMode,

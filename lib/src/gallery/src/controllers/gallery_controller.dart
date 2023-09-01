@@ -54,7 +54,7 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   late EditorSetting _cameraPhotoEditorSetting;
 
   // Completer for gallerry picker controller
-  late Completer<List<DrishyaEntity>> _completer;
+  late Completer<List<PickerEntity>> _completer;
 
   // Flag to handle updating controller value internally
   var _internal = false;
@@ -68,7 +68,7 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   bool get autoDispose => _autoDispose;
 
   // Gallery picker on changed event callback handler
-  void Function(DrishyaEntity entity, bool removed)? _onChanged;
+  void Function(PickerEntity entity, bool removed)? _onChanged;
 
   ///
   /// Initialize controller setting
@@ -115,7 +115,7 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   @internal
   void select(
     BuildContext context,
-    DrishyaEntity entity, {
+    PickerEntity entity, {
     bool edited = false,
   }) {
     // Check limit
@@ -171,10 +171,10 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   ///
   /// Open camera from [GalleryView]
   @internal
-  Future<DrishyaEntity?> openCamera(BuildContext context) async {
+  Future<PickerEntity?> openCamera(BuildContext context) async {
     final uiHandler = UIHandler.of(context);
 
-    final route = SlideTransitionPageRoute<List<DrishyaEntity>>(
+    final route = SlideTransitionPageRoute<List<PickerEntity>>(
       builder: CameraView(
         setting: _cameraSetting.copyWith(enableGallery: false),
         editorSetting: _cameraTextEditorSetting,
@@ -220,14 +220,14 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   ///
   /// Edit provided entity
   @internal
-  Future<DrishyaEntity?> editEntity(
+  Future<PickerEntity?> editEntity(
     BuildContext context,
-    DrishyaEntity entity,
+    PickerEntity entity,
   ) async {
     //
     final uiHandler = UIHandler.of(context);
 
-    final route = SlideTransitionPageRoute<DrishyaEntity>(
+    final route = SlideTransitionPageRoute<PickerEntity>(
       builder: DrishyaEditor(
         setting: _editorSetting.copyWith(
           backgrounds: [DrishyaBackground(entity: entity)],
@@ -251,9 +251,9 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   ///
   /// Open gallery using [GalleryViewField]
   @internal
-  Future<List<DrishyaEntity>> onGalleryFieldPressed(
+  Future<List<PickerEntity>> onGalleryFieldPressed(
     BuildContext context, {
-    void Function(DrishyaEntity entity, bool removed)? onChanged,
+    void Function(PickerEntity entity, bool removed)? onChanged,
     GallerySetting? setting,
     CustomRouteSetting? routeSetting,
     bool disposeOnFinish = false,
@@ -270,8 +270,8 @@ class GalleryController extends ValueNotifier<GalleryValue> {
 
   ///
   /// Handle picking process for slidable gallery using completer
-  Future<List<DrishyaEntity>> _collapsableGallery(BuildContext context) {
-    _completer = Completer<List<DrishyaEntity>>();
+  Future<List<PickerEntity>> _collapsableGallery(BuildContext context) {
+    _completer = Completer<List<PickerEntity>>();
     _panelController.openPanel();
     FocusScope.of(context).unfocus();
     return _completer.future;
@@ -280,9 +280,9 @@ class GalleryController extends ValueNotifier<GalleryValue> {
   ///
   /// Complete selection process
   @internal
-  List<DrishyaEntity> completeTask(
+  List<PickerEntity> completeTask(
     BuildContext context, {
-    List<DrishyaEntity>? items,
+    List<PickerEntity>? items,
   }) {
     final entities = items ?? value.selectedEntities;
 
@@ -310,7 +310,7 @@ class GalleryController extends ValueNotifier<GalleryValue> {
 
   ///
   /// Pick assets
-  Future<List<DrishyaEntity>> pick(
+  Future<List<PickerEntity>> pick(
     BuildContext context, {
     GallerySetting? setting,
     CustomRouteSetting? routeSetting,
@@ -334,7 +334,7 @@ class GalleryController extends ValueNotifier<GalleryValue> {
 
   ///
   /// Fetch recent entities
-  Future<List<DrishyaEntity>> recentEntities({
+  Future<List<PickerEntity>> recentEntities({
     RequestType? type,
     int count = 20,
   }) {
